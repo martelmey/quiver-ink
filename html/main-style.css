@@ -1,0 +1,105 @@
+body {
+    color: #FFFF00;
+    font-family: Consolas;
+	font-size: medium;
+	font-variant: normal;
+    background-image: url('graphics/bg/cobblestone-blue.jpg');
+	background-color: #000000;
+}
+
+object {
+    width: 750;
+    height: 500;
+}
+
+.winheader {
+    max-width: 750px;
+    margin: 0 auto;
+    background-color: #063BA4;
+    background-image: url('graphics/btn/winheader.png'), linear-gradient(to right, #0c1058, #005ea2);
+    background-repeat: no-repeat;
+    background-position: right;
+    border-top: 3px ridge #7D7D7D;
+    border-right: 3px ridge #7D7D7D;
+    border-left: 3px ridge #7D7D7D;
+    height: 20px;
+    color: white;
+    font-family: monospace;
+}
+
+#container {
+    max-width: 750px;
+    max-height: 500px;
+    margin: 0 auto;
+    display: flex;
+    border: 3px ridge #7D7D7D;
+}
+
+.winfooter {
+    max-width: 750px;
+    margin: 0 auto;
+    background-color: #bababa;
+    background-image: url('graphics/btn/winfooter.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    border-right: 3px ridge #7D7D7D;
+    border-left: 3px ridge #7D7D7D;
+    border-bottom: 3px ridge #7D7D7D;
+    height: 20px;
+    color: white;
+    font-family: monospace;
+}
+
+button {
+	border-color: #FFFF00;
+	width: 50px;
+	height: 32px;
+	background-color: #000000;
+	color: #FFFF00;
+	border: #FFFF00 ridge;
+}
+
+a:active {
+	color: #FFFFFF;
+	font-style: italic;
+}
+a:hover {
+	color: #FFFF33;
+	text-decoration: underline;
+}
+a:link {
+	color: #FFFF00;
+}
+a:visited {
+	color: #d1d100;
+}
+
+h1 {
+	font-size: xx-large;
+	font-style: italic;
+	font-variant: normal;
+	color: #00FFFF;
+}
+h2 {
+	font-size: x-large;
+	font-style: italic;
+	font-variant: normal;
+	color: #33CCCC;
+}
+
+p {
+	font-family: Consolas;
+	font-size: medium;
+	color: #FFFF99;
+}
+
+table, th, td {
+	border-collapse: collapse;
+	width: 100%;
+	border: 1px solid;
+	padding: 15px;
+	font-family: Consolas;
+	font-size: medium;
+	color: #FFFF00;
+	white-space: pre-line;
+}
