@@ -12,6 +12,50 @@ object {
     height: 500;
 }
 
+.sidebar {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: fit-content;
+    position: fixed;
+    background-color: #bababa;
+}
+
+/* add styles to links */
+.sidebar a {
+    display: block;
+    padding: 5px;
+}
+
+.main-content {
+    margin-left: 100px;
+    padding: 40px 40px;
+    height: 100vh;
+}
+
+@media screen and (max-width:500px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar a {
+        float: left;
+    }
+
+    div.main-content {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}
+
 .winheader {
     max-width: 750px;
     margin: 0 auto;

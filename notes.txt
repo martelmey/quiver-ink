@@ -1,0 +1,37 @@
+ #######################
+# NGINX                 #
+ #######################
+[root]          /usr/share/nginx/html
+[error]         /var/log/nginx/error.log
+[access]        /var/log/nginx/access.log
+[modular conf.] /etc/nginx/conf.d/*.conf
+
+Certificate is saved at: /etc/letsencrypt/live/quiver.ink/fullchain.pem
+Key is saved at:         /etc/letsencrypt/live/quiver.ink/privkey.pem
+This certificate expires on 2026-12-30.
+These files will be updated when the certificate renews.
+
+certbot install --cert-name quiver.ink
+
+ #######################
+# Embed layout & styles #
+ #######################
+Pipeline:
+1. Drop .txt onto server folder: "append" or "remove"
+2. Run "append" or "remove" scripts
+
+Append script:
+1. Check name: match existing?
+    y: ask which metadata to change
+    n: begin prompting for metadata
+2. Prompt for the following:
+    - Facet (<3, Tradition, or Darkplaces)
+    - Book/Collection
+    - Date
+    - Source (physical notebook)
+
+ #######################
+#          ETC          #
+ #######################
+
+html/object using style=width: 100%;?
