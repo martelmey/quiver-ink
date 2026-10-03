@@ -7,53 +7,22 @@ body {
 	background-color: #000000;
 }
 
-object {
-    width: 750;
-    height: 500;
-}
-
-.sidebar {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    width: fit-content;
+.navbar {
+    overflow: visible;
     position: fixed;
-    background-color: #bababa;
+    padding-bottom: 10px;
 }
 
 /* add styles to links */
-.sidebar a {
+.navbar a {
     display: block;
-    padding: 5px;
+    padding: 1px;
 }
 
 .main-content {
-    margin-left: 100px;
-    padding: 40px 40px;
+    margin-left: 40px;
+    padding: 10px 20px;
     height: 100vh;
-}
-
-@media screen and (max-width:500px) {
-    .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-    }
-
-    .sidebar a {
-        float: left;
-    }
-
-    div.main-content {
-        margin-left: 0;
-    }
-}
-
-@media screen and (max-width:300px) {
-    .sidebar a {
-        text-align: center;
-        float: none;
-    }
 }
 
 .winheader {
